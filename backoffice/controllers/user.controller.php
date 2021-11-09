@@ -66,7 +66,7 @@ Class UserController{
 	
 					<center>
 							
-						<img style="padding:20px; width:10%" src="http://www.hdv.gov.co/images/logos/logoHDV1.png">
+						<img style="padding:20px; width:10%" src="http://reservi.tech/views/img/logo.png">
 
 					</center>
 
@@ -74,7 +74,7 @@ Class UserController{
 						
 						<center>
 
-							<img style="padding:20px; width:15%" src="http://www.hdv.gov.co/images/logos/logoHDV1.png">
+							<img style="padding:20px; width:15%" src="http://reservi.tech/views/img/logo.png">
 
 							<h3 style="font-weight:100; color:#999">VERIFIQUE SU DIRECCI&Oacute;N DE CORREO ELECTR&Oacute;NICO</h3>
 

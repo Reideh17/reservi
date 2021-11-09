@@ -24,7 +24,7 @@
 
     <!-- Default box -->
     <div class="card">
-    <form>
+    <form method="post">
       <div class="card-header">
 
         <h3 class="card-title">Reserva</h3>
@@ -49,11 +49,11 @@
 
         <div class="form-group">
 
-          <label for="inputName" class="control-label">Hola,</label>
+          <label  class="control-label">Hola,</label>
 
           <div>
 
-            <input type="text" class="form-control" id="inputName" value="<?php echo $usuario["usudescrip"] ?>" readonly>
+            <input type="text" class="form-control" id="nom_user" name="nom_user" value="<?php echo $usuario["usudescrip"] ?>" readonly>
 
           </div>
 
@@ -62,7 +62,7 @@
 
         <div class="form-group">
 
-          <label for="inputMovil" class="control-label">Reserva asignada para el dia </label>
+          <label  class="control-label">Reserva asignada para el dia </label>
 
           <div class="input-group">
 
@@ -99,15 +99,15 @@
             <!-- /.info-box-content -->
           </div>
 
-          <button type="button" class="btn btn-block bg-gradient-info btn-lg">Reservar</button>
+          <button type="submit" class="btn btn-block bg-gradient-info btn-lg">Reservar</button>
 
           <?php
 
 						//$registro = new UserController();
 					//$registro->ctrRegistroUsuario();
 
-            $reserva = new reservaController();
-            $reserva->ctrRegistroResera();
+             $reserva = new reservaController();
+             $reserva->ctrRegistroResera();
 
 						?>
 
