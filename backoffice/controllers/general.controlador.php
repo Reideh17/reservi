@@ -4,7 +4,7 @@ class ControladorGeneral{
 
 	static public function ctrRuta(){
 
-		return "http://reservi.com.co/";
+		return "http://reservi.tech/";
 
 	}
 

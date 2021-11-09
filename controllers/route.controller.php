@@ -5,6 +5,6 @@ class RouteController {
 
     static public function ctrRoute (){
 
-        return "http://reservi.com.co/";
+        return "http://reservi.tech/";
     }
 }
