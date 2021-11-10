@@ -1,5 +1,5 @@
 <?php
-
+//include ("../views/js/plugins/qr/phpqrcode/qrlib.php");
 
 // https://github.com/PHPMailer/PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
@@ -10,9 +10,17 @@ class reservaController
 
    public function ctrRegistroResera()
    {
+      //$ruta = RouteController::ctrRoute();
+      //Header("Content-type: image/png");
+      //echo "<img style='padding:20px; width:15%' src='".QRcode::png('PHP QR Code :)')."'> ";
+      echo '<img src="example_001_simple_png_output.php" />';
 
+
+      /*
       if (isset($_POST["fecha_reserva"])) {
-         $ruta = RouteController::ctrRoute();
+
+         
+         
 
          date_default_timezone_set("America/Bogota");
 
@@ -27,7 +35,7 @@ class reservaController
 
 					$mail->addReplyTo("sdhsoluciones.sas@gmail.com", "Informacion SDH Soluciones");
 
-					$mail->Subject  = "Por favor verifique su direcci&oacute;n de correo electr&oacute;nico";
+					$mail->Subject  = "Codigo de reserva";
 
 					$mail->addAddress("hedier.alvarez@gmail.com");
 
@@ -45,15 +53,15 @@ class reservaController
 
 							<img style="padding:20px; width:15%" src="http://reservi.tech/views/img/logo.png">                     
 
-							<h3 style="font-weight:100; color:#999">VERIFIQUE SU DIRECCI&Oacute;N DE CORREO ELECTR&Oacute;NICO</h3>
+							<h3 style="font-weight:100; color:#999">Codigo de reserva</h3>
 
 							<hr style="border:1px solid #ccc; width:80%">
 
-							<h4 style="font-weight:100; color:#999; padding:0 20px">Para comenzar a usar su cuenta, debe confirmar su direcci&oacute;n de correo electr&oacute;nico</h4>
+							<h4 style="font-weight:100; color:#999; padding:0 20px">Presente el siguiente codigo a la hora de entregar</h4>
 
-							<a href="'.$ruta.'" target="_blank" style="text-decoration:none">
+							<a href="" target="_blank" style="text-decoration:none">
 								
-								<div style="line-height:60px; background:#0aa; width:60%; color:white">Verifique su direcci&oacute;n de correo electr&oacute;nico</div>
+								<div style="line-height:60px; background:#0aa; width:60%; color:white">CODIGO</div>
 
 							</a>
 
@@ -114,7 +122,7 @@ class reservaController
 
 								if(result.value){
 
-									window.location = "'.$ruta.'ingreso";
+									window.location = ingreso";
 
 								}
 
@@ -128,6 +136,6 @@ class reservaController
 					
             }
 
-      }
+         */}
    
 }// fin de la clase 

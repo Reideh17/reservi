@@ -8,7 +8,7 @@ require_once "models/user.model.php";
 require_once "controllers/reserva.controller.php";
 require_once "controllers/qr.controller.php";
 
-include ("views/js/plugins/qr/phpqrcode/qrlib.php");
+require_once ("views/js/plugins/qr/phpqrcode/qrlib.php");
 
 
 //require_once "models/reserva.model.php";
