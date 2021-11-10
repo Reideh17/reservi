@@ -54,6 +54,8 @@
           <div>
 
             <input type="text" class="form-control" id="nom_user" name="nom_user" value="<?php echo $usuario["usudescrip"] ?>" readonly>
+            <input type="hidden" name="user_mail" value="<?php echo $usuario["usuemail"] ?>">
+            <input type="hidden" name="user_date" value="<?php echo $fecha_solictud ?>">
 
           </div>
 
@@ -77,10 +79,8 @@
         </div>
 
         <div class="form-group">
-
-
-
-
+        <input type="hidden" name="id_token" value="<?php echo $usuario["oid"] ?>">
+        <input type="hidden" name="token" value="<?php echo $usuario["usuemailen"] ?>">
 
           <div class="info-box bg-success">
             <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
